@@ -1,0 +1,7 @@
+* Check if port and ip is valid
+* Install script
+* Check the ip with multiple sources
+* Error codes: when pct exec fails, files not found. etc
+* Logging
+* Config file
+* Parallel proccesing
