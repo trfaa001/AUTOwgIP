@@ -5,6 +5,7 @@ LOGFILE="/var/log/wgAUTO.log"
 CONFIG_DIR="/etc/wgAUTO"
 DATA_FILE="$CONFIG_DIR/data.conf"
 INSTALL_PATH="/usr/local/bin/autoWG"
+FUNCTIONS_PATH="/usr/local/bin/functions.sh"
 CRON_JOB="*/20 * * * * $INSTALL_PATH >> $LOGFILE 2>&1"
 
 echo "Starting installation..."
@@ -26,6 +27,7 @@ chmod 640 "$LOGFILE"
 # Deploy main script
 if [ -f "src/main.sh" ]; then
     cp "src/main.sh" "$INSTALL_PATH"
+    cp "src/functions.sh" "$FUNCTIONS_PATH"
     chmod 755 "$INSTALL_PATH"
     echo "Installed autoWG to $INSTALL_PATH"
 else

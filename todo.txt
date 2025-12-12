@@ -1,7 +1,5 @@
 * Config file
 * Check the ip with multiple sources
 
-* Install script
-* Parallel proccesing
-
-*Uninstall script
+* Uninstall script
+* Update to more standard install practices
