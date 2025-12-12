@@ -4,7 +4,8 @@ A bash script that automatically updates Wireguard client endpoint IP for every 
 # Install:
 <pre>
 git clone https://github.com/trfaa001/AutoWGIP.git
-chmod +x install.sh autoWG.sh
+cd AutoWGIP
+chmod +x install.sh main.sh
 ./install.sh
 </pre>
 

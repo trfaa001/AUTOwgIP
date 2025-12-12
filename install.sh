@@ -8,10 +8,6 @@ CRON_JOB="*/20 * * * * /usr/local/bin/autoWG >> /var/log/wgAUTO.log 2>&1"
 
 echo "Starting installation..."
 
-echo "Installing dependencies..."
-apt update
-apt install -y ipcalc sipcalc curl
-
 echo "Creating config directory at $CONFIG_DIR..."
 mkdir -p "$CONFIG_DIR"
 
