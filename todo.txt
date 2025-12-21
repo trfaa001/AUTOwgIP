@@ -1,5 +1,6 @@
 * Config file
 * Check the ip with multiple sources
+* Peer selection
 
 * Uninstall script
 * Update to more standard install practices
