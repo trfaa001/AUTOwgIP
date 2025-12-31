@@ -10,7 +10,7 @@ chmod +x install.sh
 </pre>
 or
 <pre>
-git clone https://github.com/trfaa001/AUTOwgIP && cd AUTOwgIP && chmod +x install.sh && ./install.sh
+git clone -b Config-file https://github.com/trfaa001/AUTOwgIP && cd AUTOwgIP && chmod +x install.sh && ./install.sh
 </pre>
 
 # Function and limitations
