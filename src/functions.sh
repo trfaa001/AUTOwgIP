@@ -45,7 +45,6 @@ validate_ip() {
 
     log "Invalid IP"
     exit 2
-    return 1
 }
 
 run_in_ct() {
@@ -61,4 +60,8 @@ check_file_existance() {
     local File="$1"
 
     if [ -f "$File" ]; then
+        return 0
+    else
+        return 1
+    fi
 }
