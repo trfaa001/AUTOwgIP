@@ -57,10 +57,10 @@ if [ "$CURRENT_IP" != "$SAVED_IP" ] || [ "$CURRENT_PORT" != "$SAVED_PORT" ]; the
 
                 run_in_ct "$CTID" cp "$FILE_PATH" "$FILE_PATH.bak"
 
-                log "[$CTID] Updating WireGuard endpoint to $CURRENT_IP:$PORT"
-                run_in_ct "$CTID" sed -i "10s|.*|Endpoint = $CURRENT_IP:$PORT|" "$FILE_PATH"
-                run_in_ct "$CTID" wg-quick down ${WG_INTERFACE_NAME}.conf
-                run_in_ct "$CTID" wg-quick up ${WG_INTERFACE_NAME}.conf
+                log "[$CTID] Updating WireGuard endpoint to $CURRENT_IP:$CURRENT_PORT"
+                run_in_ct "$CTID" sed -i "s|^Endpoint = .*|Endpoint = $CURRENT_IP:$CURRENT_PORT|" "$FILE_PATH"
+                run_in_ct "$CTID" wg-quick down ${WG_INTERFACE_NAME}
+                run_in_ct "$CTID" wg-quick up ${WG_INTERFACE_NAME}
             else
                 log "[$CTID] does not have the file $FILE_PATH"
             fi
