@@ -1,15 +1,5 @@
-* costum port (default: 8473) TESTED + WORKS
-* costum Wireguard config file name and location (default: name=wg0 location=/etc/wireguard) costum location removed, interface name change works
-* Costum log file location works
+* Check the ip with multiple sources
+* Peer selection
 
-* IPV6/4 verification on/off (default: on) works
-* Logging on/off (default: on) works
-* Dry run mode(disable changing files) works
-* Force mode (no verification or checks) works
-
-Remaining testing + debugging :(
-
-Important files:
-/etc/wgAUTO/AUTOwgIP.conf
-
-/usr/local/bin/autoWG
+* Uninstall script
+* Update to more standard install practices

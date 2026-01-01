@@ -3,14 +3,14 @@ A bash script that automatically updates Wireguard client endpoint IP for every 
 
 # Install:
 <pre>
-git clone -b Config-file https://github.com/trfaa001/AUTOwgIP
+git clone https://github.com/trfaa001/AUTOwgIP
 cd AUTOwgIP
 chmod +x install.sh
 ./install.sh
 </pre>
 or
 <pre>
-git clone -b Config-file https://github.com/trfaa001/AUTOwgIP && cd AUTOwgIP && chmod +x install.sh && ./install.sh
+git clone https://github.com/trfaa001/AUTOwgIP && cd AUTOwgIP && chmod +x install.sh && ./install.sh
 </pre>
 
 # Function and limitations
@@ -21,6 +21,4 @@ Script function:
 3. Sync the Wireguard config
 
 Limitations of the script:
-* Requires the wiregurd config to be located in the same location on all containers.
-* Requires same config name.
 * Wireguard need to be preconfigured in the container.
