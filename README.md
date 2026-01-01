@@ -15,7 +15,7 @@ git clone https://github.com/trfaa001/AUTOwgIP && cd AUTOwgIP && chmod +x instal
 
 # Uninstall:
 <pre>
-git clone https://github.com/trfaa001/AUTOwgIP && cd AUTOwgIP && chmod +x uninstall.sh && ./uninstall.sh
+chmod +x uninstall.sh && ./uninstall.sh # While in the repository folder
 </pre>
 
 # Function and limitations
