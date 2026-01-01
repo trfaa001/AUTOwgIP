@@ -1,11 +1,11 @@
-* costum port (default: 8473) UNTESTED
-* costum Wireguard config file name and location (default: name=wg0 location=/etc/wireguard) UNTESTED
-* Costum log file location UNTESTED
+* costum port (default: 8473) TESTED + WORKS
+* costum Wireguard config file name and location (default: name=wg0 location=/etc/wireguard) costum location removed, interface name change works
+* Costum log file location works
 
-* IPV6/4 verification on/off (default: on) UNTESTED
-* Logging on/off (default: on) UNTESTED
-* Dry run mode(disable changing files) UNTESTED
-* Force mode (no verification or checks) UNTESTED
+* IPV6/4 verification on/off (default: on) works
+* Logging on/off (default: on) works
+* Dry run mode(disable changing files) works
+* Force mode (no verification or checks) works
 
 Remaining testing + debugging :(
 
