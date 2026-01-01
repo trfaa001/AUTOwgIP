@@ -1,6 +1,3 @@
-#!/bin/bash
-set -euo pipefail
-
 CONFIG_FILE="/etc/wgAUTO/AUTOwgIP.conf"
 INSTALL_PATH="/usr/local/bin/autoWG"
 FUNCTIONS_FILE="/usr/local/bin/functions.sh"

@@ -13,6 +13,11 @@ or
 git clone https://github.com/trfaa001/AUTOwgIP && cd AUTOwgIP && chmod +x install.sh && ./install.sh
 </pre>
 
+# Uninstall:
+<pre>
+git clone https://github.com/trfaa001/AUTOwgIP && cd AUTOwgIP && chmod +x uninstall.sh && ./uninstall.sh
+</pre>
+
 # Function and limitations
 
 Script function:
