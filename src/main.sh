@@ -20,7 +20,7 @@ SAVED_DATA=$(cat /etc/wgAUTO/data.conf 2>/dev/null || true)
 SAVED_IP="${SAVED_DATA%%:*}"
 SAVED_PORT="${SAVED_DATA##*:}"
 
-CURRENT_IP=$(curl -s ifconfig.me) #Can be replaced with other providers/services
+CURRENT_IP=$(get_current_ip)
 CURRENT_PORT=$PORT
 
 echo "Host current public IP: $CURRENT_IP Host saved IP: $SAVED_IP"
@@ -44,7 +44,7 @@ if [ "$CURRENT_IP" != "$SAVED_IP" ] || [ "$CURRENT_PORT" != "$SAVED_PORT" ]; the
         printf "%s:%s" "$CURRENT_IP" "$CURRENT_PORT" > /etc/wgAUTO/data.conf
 
         for CTID in $(pct list | awk 'NR>1 {print $1}'); do
-                log "container" "$CTID" "found!"
+                log "container $CTID found!"
 
             if pct exec "$CTID" -- test -f "$FILE_PATH"; then
                 log "File $FILE_PATH exists in container $CTID"
