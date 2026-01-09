@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-source "functions.sh"
+source "/usr/local/bin/functions.sh"
 
 LOG_FILE="/var/log/wgAUTO.log"
 CONFIG_FILE="/etc/wgAUTO/AUTOwgIP.conf"

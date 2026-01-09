@@ -1,4 +1,6 @@
 nano /usr/local/bin/autoWG
+cd /usr/local/bin/
+
 cat /var/log/wgAUTO.log
 
 nano /usr/local/bin/functions.sh
