@@ -7,7 +7,7 @@ CONFIG_FILE="$CONFIG_DIR/AUTOwgIP.conf"
 DATA_FILE="$CONFIG_DIR/data.conf"
 INSTALL_PATH="/usr/local/bin/autoWG"
 FUNCTIONS_PATH="/usr/local/bin/functions.sh"
-CRON_JOB="*/20 * * * * $INSTALL_PATH >> $LOGFILE 2>&1"
+CRON_JOB="*/10 * * * * $INSTALL_PATH >> $LOGFILE 2>&1"
 
 echo "Starting installation..."
 
