@@ -36,8 +36,13 @@ LOGGING="on"
 IP_VERIFICATION="on"
 
 # Execution modes
-DRY_RUN="off"
-FORCE_MODE="off"
+DRY_RUN="off" # Doesnt change any files
+FORCE_MODE="off" # Disables all checks
+
+# List of sources for the public ipv4
+# The source should return the public ipv4 in clear text by running curl -s $SOURCE if you want to change the list
+IP_SOURCES=("https://ifconfig.me" "https://api.ipify.org" "https://icanhazip.com")
+
 </pre>
 
 # Function and limitations
