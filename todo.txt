@@ -1,5 +1,4 @@
-* Check the ip with multiple sources
 * Peer selection
 
 * Update to more standard install practices
-* Change the frequency of the checks
+* Variable frequency of the checks
