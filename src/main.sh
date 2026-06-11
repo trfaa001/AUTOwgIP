@@ -43,10 +43,10 @@ fi
 if [ "$CURRENT_IP" != "$SAVED_IP" ] || [ "$CURRENT_PORT" != "$SAVED_PORT" ]; then
         printf "%s:%s" "$CURRENT_IP" "$CURRENT_PORT" > /etc/wgAUTO/data.conf
 
-        for CTID in $(pct list | awk 'NR>1 {print $1}'); do
+        for CTID in $(/usr/sbin/pct list | awk 'NR>1 {print $1}'); do
                 log "container $CTID found!"
 
-            if pct exec "$CTID" -- test -f "$FILE_PATH"; then
+            if /usr/sbin/pct exec "$CTID" -- test -f "$FILE_PATH"; then
                 log "File $FILE_PATH exists in container $CTID"
 
                 if [ "$DRY_RUN" = "on" ]; then

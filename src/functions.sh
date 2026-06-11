@@ -90,7 +90,7 @@ run_in_ct() {
 
     local CTID="$1"; shift
     
-    if ! pct exec "$CTID" -- "$@"; then
+    if ! /usr/sbin/pct exec "$CTID" -- "$@"; then
         log "Error: command '$*' failed in container $CTID"
         exit 4
     fi
